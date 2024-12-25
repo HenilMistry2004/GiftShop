@@ -1,0 +1,19 @@
+/* notification.css */
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    min-width: 200px; /* Ensure notification is wide enough */
+    text-align: center; /* Center the text */
+}
+
+.notification.error {
+    background-color: #f44336;
+}

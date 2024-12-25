@@ -1,0 +1,108 @@
+/* General Body Styles */
+body {
+    background-color: #ffffff;
+    color: #413f3f;
+    font: 300 14px/20px 'Open Sans', sans-serif; /* Make sure Open Sans is imported */
+}
+
+/* Login Container */
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background-color: #f9fbfc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #d24ebb;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #d24ebb;
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #d24ebb;
+    color: #fff;
+    font: 600 16px/36px 'Dosis', sans-serif;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #000;
+}
+
+/* Error Message */
+#errorMessage {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Register Link */
+.register-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.register-message a {
+    color: #d24ebb;
+    text-decoration: none;
+}
+
+.register-message a:hover {
+    color: #000;
+}
+
+/* Responsive Design for Smaller Screens */
+@media only screen and (max-width: 767px) {
+    .login-container {
+        padding: 20px 15px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
